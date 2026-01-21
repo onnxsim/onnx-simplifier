@@ -278,7 +278,7 @@ this_directory = Path(__file__).parent
 long_description = (this_directory / "README.md").read_text()
 
 setuptools.setup(
-    name="onnxsim",
+    name="onnxsim2",
     version=VersionInfo.version,
     description='Simplify your ONNX model',
     ext_modules=ext_modules,

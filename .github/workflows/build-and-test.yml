@@ -93,10 +93,10 @@ jobs:
         python3 -c "import onnxsim; print(dir(onnxsim))"
         python3 -m pip uninstall -y onnx-simplifier
 
-    - uses: actions/upload-artifact@v4
-      with:
-        name: python-dist-sdist
-        path: dist/*.tar.gz
+    # - uses: actions/upload-artifact@v4
+    #   with:
+    #     name: python-dist-sdist
+    #     path: dist/*.tar.gz
 
   upload_pypi:
     name: Upload to PyPI
