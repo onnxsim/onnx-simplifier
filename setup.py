@@ -138,8 +138,7 @@ class cmake_build(setuptools.Command):
                 CMAKE,
                 '-DPython_INCLUDE_DIR={}'.format(sysconfig.get_python_inc()),
                 '-DPython_EXECUTABLE={}'.format(sys.executable),
-                # For pybind11
-                '-DBUILD_ONNX_PYTHON=OFF',
+                '-DONNX_BUILD_PYTHON=ON',
                 '-DONNXSIM_PYTHON=ON',
                 '-DONNXSIM_BUILTIN_ORT=OFF',
                 '-DONNX_USE_LITE_PROTO=OFF',
