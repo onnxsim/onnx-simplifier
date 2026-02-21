@@ -55,7 +55,7 @@ try:
 except (OSError, subprocess.CalledProcessError):
     git_version = None
 
-if os.getenv('ONNXSIM_SDIST') is not None:
+if os.getenv('ONNXSIM_SDIST_RELEASE') is not None:
     version = '0.0.0'
     git_version = None
 
